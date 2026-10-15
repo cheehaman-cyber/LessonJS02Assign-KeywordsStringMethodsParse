@@ -16,11 +16,12 @@ console.log(typeof numberPrice);
 //Task 3  Multiply by 0.1
 let discountedAmount = numberPrice*0.1;
 let finalPrice = numberPrice - discountedAmount;
-console.log(numberPrice-discountedAmount);
+console.log(finalPrice);
 
 //Task 4 Print out the new price in a template literal using console.log(), for example: 'Your new price is: $44.99'
 //Task 4 a template literal lets you put a variable’s value inside a message. 
-console.log(`Your new price is: $${finalPrice}`);
+let displayedAmount = finalPrice.toFixed(2);
+console.log(`Your new price is: $${displayedAmount}`);
 
 
 
